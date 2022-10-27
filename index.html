@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jadwal Pesawat</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/image 1.png">
+            <span class="text-right">KEBERANGKATAN</span>
+        </img>
+    </div>
+    <table class="center">
+        <tr>
+            <th>Penerbangan</th>
+            <th>Destinasi</th>
+            <th>Jadwal</th>
+            <th>Gerbang</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103022567 1.png"> JT 294</td>
+            <td>Medan</td>
+            <td>08:00</td>
+            <td>00</td>
+            <td>Terlambat</td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103216155 1.png"> GA 560</td>
+            <td>Samarinda</td>
+            <td>08:00</td>
+            <td>01</td>
+            <td>Terlambat</td>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103415061 1.png"> CG 391</td>
+            <td>Balikpapan</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103643969 1.png">AK 248</td>
+            <td>Jakarta</td>
+            <td>08:00</td>
+            <td>01</td>
+            <td>Terlambat</td>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103216155 1.png"> GA 275</td>
+            <td>Bandung</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103415061 1.png"> CG 683</td>
+            <td>Irian Jaya</td>
+            <td>08:00</td>
+            <td>00</td>
+            <td>Terlambat</td>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103415061 1.png">CG 591</td>
+            <td>Bali</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103022567 1.png">JT 492</td>
+            <td>Pontianak</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103216155 1.png">GA 492</td>
+            <td>Jakarta</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103022567 1.png">JT 565</td>
+            <td>Banjarmasin</td>
+            <td>08:00</td>
+            <td>02</td>
+            <td></td>
+        </tr>
+        <tr class="column-1">
+            <td><img src="img/image_2022-10-12_103643969 1.png">AK 482</td>
+            <td>Surabaya</td>
+            <td>08:00</td>
+            <td>01</td>
+            <td></td>
+        </tr>
+        <tr class="column-2">
+            <td><img src="img/image_2022-10-12_103643969 1.png">AK 421</td>
+            <td>Medan</td>
+            <td>08:00</td>
+            <td>00</td>
+            <td>Terlambat</td>
+        </tr>
+    </table>
+    <div class="bentuk">
+        <h1 id="kotak-panjang">Today : <span id="waktu"></span></h1>
+    </div>
+</body>
+
+<script>
+function refreshTime() {
+  const timeDisplay = document.getElementById("waktu");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(",", " ").replace("/","-").replace("/", "-");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+    </script>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background-color: #449bff;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.text-right{
+    display: inline-block;
+    font-size: 60px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+th{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    border: 1px solid #040454;
+    background-color: #040454;
+    color: white;
+    text-align: center;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.column-1{
+    background-color: #50A7F6;
+}
+
+.column-1 td{
+    color:white;
+    border: 1px solid #50A7F6;
+}
+
+.column-2{
+    background-color: #0056D8;
+}
+
+.column-2 td{
+    color: white;
+    border: 1px solid #0056D8;
+}
+
+#kotak-panjang {
+    width: 800px;
+    height: 25px;
+    background: red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.bentuk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    margin-top: 249px;
+}
